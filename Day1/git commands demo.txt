@@ -24,3 +24,17 @@ create repository
 on git bash
 git remore add origin "path of newly created repository"
 git push -u origin master
+
+
+//working with branches
+git branch "name of the branch"
+git checkout "branchname"
+do what all you want to do in this branch the way we did above in master branch
+if you want to push the branch in gt hub
+git push -u origin "NewBranchName"
+
+to delete a branch
+
+git branch -d "Name of the Branch"  //Local Repository
+
+git push origin --delete "Name of Branch " //Remote Repository
