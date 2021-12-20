@@ -1,0 +1,15 @@
+mvn archetype:generate
+
+maven-archetype-quickstart : core java
+
+archetype:default
+version:default
+group id : package structuring
+artifactId: name of the project
+version :default
+asked for confirmation : y
+
+project created
+
+main confuguration file : 
+pom.xml : project object model
