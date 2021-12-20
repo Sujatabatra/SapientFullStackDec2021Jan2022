@@ -1,0 +1,26 @@
+git config --global user.name Sujata
+git config --global user.email sujatabatra@hotmail.com
+
+git init
+git status
+touch "filename"
+git status
+git add "filename"
+git status
+git commit -m "message"
+git status
+git log
+
+touch m2.txt
+(modified m1.txt)
+git status
+git add .
+git commit -m "message"
+
+create login on github
+signin on git hub
+create repository
+
+on git bash
+git remore add origin "path of newly created repository"
+git push -u origin master
