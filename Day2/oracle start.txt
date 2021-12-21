@@ -1,0 +1,26 @@
+from oracle >> Run SQL Command Line
+1. connect system/password
+2. Alter user hr ACCOUNT UNLOCK;
+3. connect hr/hr
+hr password is expired :
+new password :hr
+confirm password : hr
+
+//column level constraint
+create table tablename(
+column1 datatype constraints,
+column2 datatype default defaultValue constraints,
+.
+.
+.
+columnn datatype)
+
+//table level constraints
+create table tablename(
+column1 datatype ,
+column2 datatype default defaultValue,
+.
+.
+.
+columnn datatype,
+constraints)
