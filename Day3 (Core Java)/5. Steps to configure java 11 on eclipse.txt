@@ -1,0 +1,7 @@
+setting up eclipse for Java 11
+
+
+1. window >> preferences >> Java >> Compiler >> Change Compiler Complaince Level : 11 from drop down>>
+
+2. Installed JRE >> click Add Button  >> dialogue box will appear >> select standard VM from dialogue box>> next >>from jre home select directory where your java installation is (C:\Program Files\Java\jdk-11.0.12)>> finish>>
+from installed jre path select the jre we selected in previous steps >> apply and close
