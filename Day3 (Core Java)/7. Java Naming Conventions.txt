@@ -1,0 +1,6 @@
+Java Naming Conventions
+
+1. Class Name must be in PascalCase
+2. package name must be in lower case
+3. method name must be in camelCase
+4. varibale name must be in camelCase
