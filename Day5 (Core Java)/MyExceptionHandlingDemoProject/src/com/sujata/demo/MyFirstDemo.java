@@ -48,8 +48,11 @@ public class MyFirstDemo {
 		catch(ArrayIndexOutOfBoundsException exception) {
 			System.out.println("location "+location+" does not exist in an array");
 		}
-		catch(Exception exception) {
-			System.out.println("Something went wrong , please try again!");
+//		catch(Exception exception) {
+//			System.out.println("Something went wrong , please try again!");
+//		}
+		finally {
+			System.out.println("Hi I am finally block");
 		}
 		System.out.println("Good Bye from main");
 
