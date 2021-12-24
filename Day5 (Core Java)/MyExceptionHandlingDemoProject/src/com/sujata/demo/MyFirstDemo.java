@@ -16,7 +16,7 @@ public class MyFirstDemo {
 			int divide = number1 / number2;
 
 			System.out.println("Division Result : " + divide);
-			
+//			System.exit(0);
 			//declaration of an array
 			int arr[];
 			
