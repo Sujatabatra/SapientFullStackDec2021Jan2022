@@ -12,5 +12,10 @@ public class Oval implements Shape {
 	public void circumference() {
 		System.out.println("Hi i am Oval Circumference");
 	}
+	
+//	@Override
+//	public void demo() {
+//		
+//	}
 
 }
