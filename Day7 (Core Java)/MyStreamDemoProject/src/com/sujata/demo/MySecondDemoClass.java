@@ -2,6 +2,7 @@ package com.sujata.demo;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import com.sujata.bean.Book;
 import com.sujata.datasource.BookList;
@@ -41,6 +42,12 @@ public class MySecondDemoClass {
 		.count();
 		
 		System.out.println("Total no of authors in our book collection "+totalNoOfAuthors);
+		
+		System.out.println(books.stream()
+		.mapToInt(Book::getPrice)
+		.sum());
+		
+		System.out.println(books.stream().collect(Collectors.summarizingInt(Book::getPrice)));
 	}
 
 }
