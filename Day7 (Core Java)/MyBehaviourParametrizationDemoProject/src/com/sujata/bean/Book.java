@@ -26,4 +26,7 @@ public class Book {
 	@Getter
 	@Setter
 	private int noOfPages;
+	@Getter
+	@Setter
+	private String publisher;
 }

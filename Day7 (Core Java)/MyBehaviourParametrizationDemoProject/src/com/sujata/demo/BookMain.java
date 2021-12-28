@@ -46,7 +46,14 @@ public class BookMain {
 		
 		System.out.println(bookList4);
 		
-		
+		System.out.println("List of Books Published By BPB");
+		List<Book> bookList5=bookSearchService.searchBooks(books, new BookPredicate() {
+			@Override
+			public boolean test(Book book) {
+				return book.getPublisher().equals("BPB");
+			}
+		});
+		System.out.println(bookList5);
 		
 	}
 
