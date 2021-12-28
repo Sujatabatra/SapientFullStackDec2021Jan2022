@@ -38,6 +38,7 @@ public class MyFirstDemoClass {
 		.forEach(System.out::println);  //terminal method
 		
 		System.out.println("=================");
+		
 		myList.stream()
 		.filter(ele->ele%2==0)   //intermediate method
 		.map(ele->ele+4)  ///intermediate method

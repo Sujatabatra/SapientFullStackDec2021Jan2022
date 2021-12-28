@@ -2,6 +2,8 @@ package com.sujata.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import com.sujata.bean.Book;
 
@@ -25,12 +27,18 @@ public class BookSearchService {
 		return bookList;
 	}
 	
-	public List<Book> searchBooks(List<Book> books,BookPredicate bookpredicate){
-		List<Book> bookList=new ArrayList();
-		for(Book book:books) {
-			if(bookpredicate.test(book))
-				bookList.add(book);
-		}
+	public List<Book> searchBooks(List<Book> books,BookPredicate bookPredicate){
+//		List<Book> bookList=new ArrayList();
+//		for(Book book:books) {
+//			if(bookpredicate.test(book))
+//				bookList.add(book);
+//		}
+//		return bookList;
+		
+		List<Book> bookList=books.stream()
+		.filter(bookPredicate::test)
+		.collect(Collectors.toList());
+		
 		return bookList;
 	}
 }
