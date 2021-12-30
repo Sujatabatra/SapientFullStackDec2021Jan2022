@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Demonstrating Form Tag</title>
+</head>
+<body>
+	<h1>Demonstrating Form Tag</h1>
+	<h2>Employee Details</h2>
+	<form method="post" action="./my">
+		Enter Employee ID : <input type="text" name="eId"
+			placeholder="Employee ID" required="required"><br> <br> Enter Employee
+		Name : <input type="text" name="eName"><br> <br>
+		Enter Password : <input type="password" name="pwd"><br> <br>
+		Select Gender : <input type="radio" name="gender" value="M">Male
+		<input type="radio" name="gender" value="F">Female<br> <br>
+		Select Hobbies : <input type="checkbox" value="reading" name="hobbies">Reading
+		<input type="checkbox" value="travelling" name="hobbies">Travelling
+		<input type="checkbox" value="cooking" name="hobbies">Cooking<br>
+		<br> Select Location : <select name="location">
+			<option value="delhi">Delhi</option>
+			<option value="noida">Noida</option>
+			<option value="gurugram">Gurugram</option>
+			<option value="chennai">Chennai</option>
+			<option value="pune">Pune</option>
+		</select><br> <br> Enter Age : <input type="number" name="age"
+			placeholder="Age" min="18" max="60"><br>
+		<br> select Favourite Color : <input type="color" name="color"><br>
+		<br> Input Date of Joining : <input type="date" name="doj"><br>
+		<br> <input type="submit" value="Click Me">
+	</form>
+
+	<br>
+	<br>
+	<a href="index.html">Go Back to Main Page</a>
+</body>
+</html>
