@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="result"></div>
+	
+	<!-- Script tag is used to write java script in html document -->
+	<script>
+	// Check browser support
+	if (typeof(Storage) !== "undefined") {
+  	// Store
+  		localStorage.setItem("lastname", "Smith");
+  	// Retrieve
+  	document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+	} 
+	else {
+  		document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+	}
+</script>
+
+</body>
+</html>
