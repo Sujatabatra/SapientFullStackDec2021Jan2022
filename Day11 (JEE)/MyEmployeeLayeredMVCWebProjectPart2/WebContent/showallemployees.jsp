@@ -2,7 +2,11 @@
 <%@page import="java.util.List"%>
 <%@page import="com.sujata.bean.User"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1" %>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+ 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,9 +17,7 @@
 	<%@ include file="header.jsp"%>
 
 	<main>
-		<%
-		List<Employee> employeeList = (List<Employee>) request.getAttribute("employeeList");
-		%>
+		
 
 		<table border="1">
 			<thead>
@@ -28,19 +30,15 @@
 				</tr>
 			</thead>
 			<tbody>
-				<%
-				for (Employee employee : employeeList) {
-				%>
-				<tr>
-					<td><%=employee.getEmpId() %></td>
-					<td><%=employee.getEmpName() %></td>
-					<td><%=employee.getDesignation() %></td>
-					<td><%=employee.getDepartment() %></td>
-					<td><%=employee.getSalary() %></td>
-				</tr>
-				<%
-				}
-				%>
+				<c:forEach items="${requestScope.employeeList}" var="employee">
+					<tr>
+						<td>${employee.empId }</td>
+						<td>${employee.empName }</td>
+						<td>${employee.designation }</td>
+						<td>${employee.department }</td>
+						<td>${employee.salary }</td>
+					</tr>
+				</c:forEach>
 			</tbody>
 		</table>
 		<br> <br> <a href="./employeemenu.jsp">Go To Main Menu</a>
