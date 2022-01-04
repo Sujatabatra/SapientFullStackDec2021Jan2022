@@ -8,17 +8,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<header>
-		<h1>Employee Management System</h1>
-		<h2>
-			Welcome,
-			<%
-		User user = (User) application.getAttribute("user");
-		out.println(user.getUsername().toUpperCase());
-		%>!
-		</h2>
-	</header>
-	
+	<%@ include file="header.jsp"%>
+
 	<main>
 		<form action="./save" method="post">
 			Enter Employee ID : <input type="text" name="empId"><br>
@@ -39,11 +30,8 @@
 			<br> <input type="submit" value="Save Employee">
 		</form>
 	</main>
-	
-	<footer>
-		<h4>This demo is the registered trade mark of Sujata Batra&reg;</h4>
-		<h5>Created for Batch SFCC</h5>
-	</footer>
+
+	<%@include file="footer.jsp"%>
 
 
 </body>

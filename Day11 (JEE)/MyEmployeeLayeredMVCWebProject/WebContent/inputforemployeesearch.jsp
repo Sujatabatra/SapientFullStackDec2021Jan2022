@@ -18,17 +18,17 @@
 		%>!
 		</h2>
 	</header>
-	<nav>
-		<a href="./getallemployees">List All Employees</a><br>
-		<br> <a href="./inputforemployeesearch.jsp">Search Employee By ID</a><br>
-		<br> <a href="./employeeinputform.jsp">Insert Employee</a><br>
-		<br> <a href="./inputforemployeedelete.jsp">Delete Employee</a><br>
-		<br> <a href="">Update Employee</a><br>
-		<br> <a href="">Generate PaySlip</a>
-	</nav>
+	<main>
+		<form action="./search" method="post">
+			Enter Employee ID : <input type="text" name="empId"><br>
+			<br> <input type="submit" value="Search Employee">
+		</form>
+	</main>
 	<footer>
 		<h4>This demo is the registered trade mark of Sujata Batra&reg;</h4>
 		<h5>Created for Batch SFCC</h5>
 	</footer>
+
+
 </body>
 </html>

@@ -34,4 +34,24 @@
     <servlet-name>DeleteEmployee</servlet-name>
     <url-pattern>/delete</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SearchEmployee</display-name>
+    <servlet-name>SearchEmployee</servlet-name>
+    <servlet-class>com.sujata.controllers.SearchEmployeeController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchEmployee</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetAllEmployeesController</display-name>
+    <servlet-name>GetAllEmployeesController</servlet-name>
+    <servlet-class>com.sujata.controllers.GetAllEmployeesController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetAllEmployeesController</servlet-name>
+    <url-pattern>/getallemployees</url-pattern>
+  </servlet-mapping>
 </web-app>
