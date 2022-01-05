@@ -1,0 +1,15 @@
+1. add tomcat server in current workspace
+2. create maven project (jersey-quickstart-webapp)
+3. add tomcat server to the created project
+4. add oracle depedency
+5. add two jaxb dependencies : pom.xml
+6. uncomment json support depedencies :pom.xml
+7. create persistence and service layer (service layer will be exposed to rest api)
+8. create resource i.e rest api
+
+===============================================
+to test Rest API
+1. download post man
+2. click on workspace
+3. click on my collection
+4. create new request and save it by giving meaningful name
