@@ -1,8 +1,7 @@
-package com.sujata.demo;
+package com.sujata.resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
@@ -21,15 +20,6 @@ public class MyResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getIt() {
-        return "<h1>Got it!</h1>";
+        return "Got it!";
     }
-    
-    @Path("/html")
-    @GET
-    @Produces(MediaType.TEXT_HTML)
-    public String getItByHtml(String name) {
-        return "<h1>Got it " +name+"!</h1>";
-    }
-    
-    
 }
