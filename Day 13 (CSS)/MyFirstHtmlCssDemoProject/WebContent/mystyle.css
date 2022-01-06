@@ -1,0 +1,13 @@
+@charset "ISO-8859-1";
+h1{
+color: orange;
+font-size: 3em;
+background-color: gray; 
+}
+.classB{
+color:blue;
+}
+
+#id1{
+color:red;
+}
