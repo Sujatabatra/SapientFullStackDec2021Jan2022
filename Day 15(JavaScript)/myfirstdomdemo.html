@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ol id="parent">
+        <li><a href="">India</a></li>
+        <li><a href="">SriLanka</a></li>
+        <li><a href="">Nepal</a></li>
+        <li><a href="">Bhutan</a></li>
+    </ol>
+    <script>
+        var element = document.getElementById("parent");
+        var nodeList = element.children;
+        console.log("Length :" + nodeList.length);
+
+        var child = element.children[0];
+        console.log(child);
+
+        var grandChild = child.children[0];
+        console.log(grandChild);
+
+        var thirdgrandChild = element.children[2].children[0];
+        console.log(thirdgrandChild);
+    </script>
+</body>
+
+</html>

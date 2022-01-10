@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Document</title>
+    <script>
+        function product(){
+            var no1=document.getElementById('n1').value;
+            alert("no1 : "+no1);
+            var no2=document.getElementById('n2').value;
+            alert("no2 : "+no2);
+            var mul=no1*no2;
+            alert("Multiply : "+mul);
+            document.getElementById("res").innerHTML=mul;
+        }
+    </script>
+</head>
+<body>
+    
+        Enter First No : <input type="text" id="n1"/><br><br>
+        Enter Second No : <input type="text" id="n2"/><br><br>
+        <button onclick="product()">Multiply</button>
+    
+    <p id="res"> 
+        Result :
+    </p>
+</body>
+</html>
