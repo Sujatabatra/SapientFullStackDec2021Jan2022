@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Module Demo</title>
+</head>
+<body>
+    <p id=h1></p>
+    
+    <script type="module">
+        import {Greeting} from './MyFirstModule.js';
+        var greet=new Greeting("Kiran");
+        var msg1 = greet.showMessage();
+        var element = document.querySelector('#h1');
+        element.innerHTML = msg1;
+    </script>
+</body>
+</html>
