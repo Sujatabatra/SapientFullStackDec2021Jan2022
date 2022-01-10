@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    Enter First Name : <input type="text" id="fna"><br><br>
+    Enter Second Name : <input type="text" id="lna"><br><br>
+    <button onclick="showData()">Show Full Name</button>
+    <div id="details">
+
+    </div>
+    <script>
+        class Person{
+            constructor(firstname,lastname){
+                this.firstname=firstname;
+                this.lastname=lastname;
+            }
+            getFullName(){
+                return this.firstname+" "+this.lastname;
+            }
+        }
+
+        
+
+        function showData(){
+            var fn=document.getElementById("fna").value;
+            var ln=document.getElementById("lna").value;
+
+            var p1=new Person(fn,ln);
+            document.getElementById("details").innerHTML=p1.getFullName();   
+
+        }
+    </script>
+    
+</body>
+</html>

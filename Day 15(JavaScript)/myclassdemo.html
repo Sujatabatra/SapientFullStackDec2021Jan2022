@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>My Class Demo</title>
+</head>
+<body>
+    <p id="h1">Hi Para!</p>
+    
+    <script>
+    class WelcomePage {
+        constructor(heading) { 
+        this.heading=heading;
+        }
+        getHeading() {
+         return this.heading.toUpperCase();
+        }
+    }
+
+    var data = new WelcomePage("Welcome to ES6 Programming");
+  
+    var element = document.querySelector('#h1');
+    element.innerHTML = data.getHeading();
+    </script>
+</body>
+</html>
