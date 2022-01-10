@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function changeSecondName(){
+            var element = document.getElementById("names");
+            var child = element.children[1]; 
+            child.firstChild.nodeValue="Farhan";
+        }
+    </script>
 </head>
 <body>
     <ol id="names" class="BatchNames">
@@ -13,6 +20,6 @@
         <li>Kiran</li>
         <li>Sandhya</li>
     </ol>
-    <button onclick="">Change Suhel to Farhan</button>
+    <button onclick="changeSecondName()">Change Suhel to Farhan</button>
 </body>
 </html>
