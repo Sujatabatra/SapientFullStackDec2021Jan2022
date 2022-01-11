@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>First AJAX Application</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#bangle").mouseenter(function(){
+    $("#targetDiv").load("bangles.txt");
+  });
+  $("#earring").mouseenter(function(){
+	    $("#targetDiv").load("earrings.txt");
+	  });
+  $("#necklace").mouseenter(function(){
+	    $("#targetDiv").load("necklace.txt");
+	  });
+});
+</script>
+</head>
+
+<body>
+	<H1>SDFCC Jewellery Store</H1>
+	<img id="bangle" src="./Bangles.jpeg" >
+	<img id="earring" src="./earrings.jpeg" >
+	<img id="necklace" src="./necklace.jpeg" >
+	<div id="targetDiv">
+		
+	</div>
+</body>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
