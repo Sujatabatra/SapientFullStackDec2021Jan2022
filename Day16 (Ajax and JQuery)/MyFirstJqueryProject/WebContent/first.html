@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	
+<script type="text/javascript">
+/*JQuery(selector).action(function())*/
+/*jQuery(document).ready(function() {
+	alert(jQuery('p').text());
+	});
+*/
+/*
+ * $(selector).action(function())
+ */
+$(document).ready(function() {
+	alert($('p').text());
+	
+	});
+
+$(document).ready(function(){
+	$("#message").html("<h1>Updating div using Jquery</h1>");
+	//$("#message").text("<h1>Updating div using Jquery</h1>");
+});
+</script>
+</head>
+<body>
+<p>Hello everyone how are you</p>
+
+<div id="message"></div>
+</body>
+</html>
