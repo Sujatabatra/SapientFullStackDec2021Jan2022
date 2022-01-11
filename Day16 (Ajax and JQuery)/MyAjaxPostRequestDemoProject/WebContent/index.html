@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$("#state").focus(function(){
+		var cityName=$("#city").val();
+		$.post("./ajaxtest",{city:cityName},function(data){
+			$("#state").val(data)},"text")
+		})
+})
+</script>
+</HEAD>
+<BODY>
+<form name="ajxfrm">
+    <table>
+        <!-- city  -->
+        <tr>
+            <td>City</td><td><input type="text" id="city" value=""/></td>
+        </tr>
+        <!--  state -->
+        <tr>
+            <td>State</td><td><input type="text" id="state" value=""/></td>
+        </tr>
+    </table>
+
+</form>
+</BODY>
+</HTML>
